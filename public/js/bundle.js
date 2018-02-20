@@ -52316,11 +52316,7 @@
 	      return _react2.default.createElement(
 	        "div",
 	        { className: "page-home" },
-	        _react2.default.createElement(
-	          "h4",
-	          null,
-	          "Hello world!"
-	        )
+	        _react2.default.createElement("iframe", { width: "560", height: "315", src: "https://www.youtube.com/embed/D7bE2l0aCqU", frameborder: "0", allow: "autoplay; encrypted-media", allowfullscreen: true })
 	      );
 	    }
 	  }]);
