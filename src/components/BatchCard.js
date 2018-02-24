@@ -5,29 +5,6 @@ import RaisedButton from 'material-ui/RaisedButton';
 
 import {GridList, GridTile} from 'material-ui/GridList';
 
-const tilesData = [
-  {
-    img: 'https://images.media-allrecipes.com/userphotos/720x405/1006752.jpg',
-    title: 'Breakfast',
-    author: 'jill111',
-  },
-  {
-    img: 'https://images.media-allrecipes.com/userphotos/720x405/1006752.jpg',
-    title: 'Tasty burger',
-    author: 'pashminu',
-  },
-  {
-    img: 'https://images.media-allrecipes.com/userphotos/720x405/1006752.jpg',
-    title: 'Camera',
-    author: 'Danson67',
-  },
-  {
-    img: 'https://images.media-allrecipes.com/userphotos/720x405/1006752.jpg',
-    title: 'Morning',
-    author: 'fancycrave1',
-  }
-];
-
 const BatchCard = (props) => (
   <Card>
     <CardMedia
@@ -60,7 +37,7 @@ const BatchCard = (props) => (
     Total Price = &#36;{props.batch.ingredients.reduce((prev, next) => prev + next.price, 0)}
     </CardText>
     <CardActions>
-      <RaisedButton label="Make It!" fullWidth={true} backgroundColor="#68d2ed" href={props.batch.recipes[0].url} />
+      <RaisedButton label="Make It!" fullWidth={true} backgroundColor="#68d2ed" href={"/B"+props.batchNum} />
     </CardActions>
   </Card>
 );

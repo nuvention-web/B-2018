@@ -10,7 +10,7 @@ export default class IngredientsGroup extends React.Component {
         {batches.map(function(batch, idx) {
           return (
             <div key={"batch" + idx}>
-              <BatchCard className="batch-card" batch={batch}/>
+              <BatchCard className="batch-card" batch={batch} batchNum={idx} />
               <br></br>
               <br></br>
             </div>

@@ -3,7 +3,6 @@ import FoodCard from './FoodCard'
 import dishes from '../common/dishes'
 
 export default class RecipeScore extends React.Component {
-  // render
   render() {
     return (
       <div className="page-home">
