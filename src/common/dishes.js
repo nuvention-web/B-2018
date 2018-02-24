@@ -3,7 +3,7 @@ let dishes = [
     "title": "Chicken and Veggie Stir Fry",
     "url": "http://allrecipes.com/recipe/231229/stir-fry-chicken-and-vegetables/",
     "match": "95",
-    "imgUrl": "https://www.landolakes.com/RecipeManagementSystem/media/Recipe-Media-Files/Recipes/Retail/DesktopImages/09581.jpg?ext=.jpg",
+    "imgUrl": "https://images.media-allrecipes.com/userphotos/720x405/1006752.jpg",
     "details": {
       "calories": "313 cal",
       "time": "30min"
