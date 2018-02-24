@@ -1,6 +1,6 @@
 import React from "react";
 import BatchCard from './BatchCard';
-import batches from '../common/batches';
+import batches from '../../common/batches';
 
 export default class IngredientsGroup extends React.Component {
   // render

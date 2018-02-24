@@ -7,3 +7,14 @@
 
 .match-text-container {
   text-align: center; }
+
+body {
+  background-color: #f7f8f9; }
+
+.dont-care {
+  float: left;
+  margin-top: 30px; }
+
+.important {
+  float: right;
+  margin-top: 30px; }

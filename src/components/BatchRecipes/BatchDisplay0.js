@@ -3,7 +3,7 @@ import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'mat
 import FlatButton from 'material-ui/FlatButton';
 import RaisedButton from 'material-ui/RaisedButton';
 
-import batches from '../common/batches';
+import batches from '../../common/batches';
 import BatchRecipeCard from './BatchRecipeCard';
 
 let batchIdx = 0;
