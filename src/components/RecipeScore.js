@@ -13,7 +13,15 @@ export default class RecipeScore extends React.Component {
           iconClassNameRight="muidocs-icon-navigation-expand-more"
           className="app-bar"
         />
-        <FoodCard dish={dishes[0]} />
+        {dishes.map(function(dish, idx) {
+          return (
+            <div key={"dish" + idx}>
+              <FoodCard className="food-card" dish={dish}/>
+              <br></br>
+              <br></br>
+            </div>
+          )
+        })}
       </div>
     );
   }

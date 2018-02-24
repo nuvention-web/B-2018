@@ -59952,7 +59952,15 @@
 	          iconClassNameRight: 'muidocs-icon-navigation-expand-more',
 	          className: 'app-bar'
 	        }),
-	        _react2.default.createElement(_FoodCard2.default, { dish: _dishes2.default[0] })
+	        _dishes2.default.map(function (dish, idx) {
+	          return _react2.default.createElement(
+	            'div',
+	            { key: "dish" + idx },
+	            _react2.default.createElement(_FoodCard2.default, { className: 'food-card', dish: dish }),
+	            _react2.default.createElement('br', null),
+	            _react2.default.createElement('br', null)
+	          );
+	        })
 	      );
 	    }
 	  }]);
@@ -64143,7 +64151,8 @@
 	      _react2.default.createElement(
 	        'span',
 	        { className: 'match-text' },
-	        '95% match'
+	        props.dish.match,
+	        '% match'
 	      )
 	    ),
 	    _react2.default.createElement(
@@ -66735,13 +66744,36 @@
 	var dishes = [{
 	  "title": "Chicken and Veggie Stir Fry",
 	  "url": "http://allrecipes.com/recipe/231229/stir-fry-chicken-and-vegetables/",
+	  "match": "95",
 	  "imgUrl": "https://www.landolakes.com/RecipeManagementSystem/media/Recipe-Media-Files/Recipes/Retail/DesktopImages/09581.jpg?ext=.jpg",
 	  "details": {
 	    "calories": "313 cal",
-	    "time": "40min"
+	    "time": "30min"
 	  },
-	  "pros": ["Cheap Ingredients", "Healthy"],
-	  "cons": ["Time Consuming"]
+	  "pros": ["Cheap Ingredients", "Healthy", "Quick"],
+	  "cons": []
+	}, {
+	  "title": "Vegetarian Meatballs and Marinara",
+	  "url": "https://minimalistbaker.com/simple-vegan-meatballs/",
+	  "match": "80",
+	  "imgUrl": "https://minimalistbaker.com/wp-content/uploads/2014/09/SIMPLE-10-ingredient-vegetarian-meatballs.-Tempeh-base-with-flavor-from-herbs-vegan-parm-and-bread-crumbs.-SO-quick-and-easy-and-perfect-on-pasta1.jpg",
+	  "details": {
+	    "calories": "264 cal",
+	    "time": "50min"
+	  },
+	  "pros": ["Healthy"],
+	  "cons": ["Many Ingredients"]
+	}, {
+	  "title": "Roasted Sweet Potatoes",
+	  "url": "http://allrecipes.com/recipe/241834/oven-roasted-sweet-potatoes/",
+	  "match": "75",
+	  "imgUrl": "https://images.media-allrecipes.com/userphotos/720x405/2209630.jpg",
+	  "details": {
+	    "calories": "672 cal",
+	    "time": "45min"
+	  },
+	  "pros": ["Cheap Ingredients", "Easy Recipe"],
+	  "cons": ["High Calorie"]
 	}];
 
 	exports.default = dishes;
