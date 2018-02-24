@@ -1,10 +1,12 @@
 let dishes = [
   {
     "title": "Chicken and Veggie Stir Fry",
-    "url": "https://www.landolakes.com/RecipeManagementSystem/media/Recipe-Media-Files/Recipes/Retail/DesktopImages/09581.jpg?ext=.jpg",
+    "url": "http://allrecipes.com/recipe/231229/stir-fry-chicken-and-vegetables/",
+    "match": "95",
+    "imgUrl": "https://www.landolakes.com/RecipeManagementSystem/media/Recipe-Media-Files/Recipes/Retail/DesktopImages/09581.jpg?ext=.jpg",
     "details": {
-      "calories": "300 cal",
-      "time": "1hr"
+      "calories": "313 cal",
+      "time": "40min"
     },
     "pros": ["Cheap Ingredients", "Healthy"],
     "cons": ["Time Consuming"]

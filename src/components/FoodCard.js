@@ -5,15 +5,15 @@ import RaisedButton from 'material-ui/RaisedButton';
 
 const FoodCard = (props) => (
   <Card>
-    <CardText>
-      95 percent match
+    <CardText className="match-text-container">
+      <span className="match-text">{props.dish.match}&#37; match</span>
     </CardText>
     <CardMedia
       overlay={<CardTitle title={props.dish.title} subtitle={props.dish.details.calories + ", " + props.dish.details.time} />}
     >
-      <img src={props.dish.url} alt="" />
+      <img src={props.dish.imgUrl} alt="" />
     </CardMedia>
-    <CardText>
+    <CardText color="green">
       {
         props.dish.pros.map(function(pro, idx) {
           return (
@@ -23,6 +23,8 @@ const FoodCard = (props) => (
           )
         })
       }
+      </CardText>
+      <CardText color="red">
       {
         props.dish.cons.map(function(con, idx) {
           return (
@@ -34,7 +36,7 @@ const FoodCard = (props) => (
       }
     </CardText>
     <CardActions>
-      <RaisedButton label="Make It!" fullWidth={true} backgroundColor="#68d2ed" />
+      <RaisedButton label="Make It!" fullWidth={true} backgroundColor="#68d2ed" href={props.dish.url} />
     </CardActions>
   </Card>
 );
