@@ -10,6 +10,7 @@ export default class SuggestBetterRecipes extends React.Component {
         <AppBar
           title="Title"
           iconClassNameRight="muidocs-icon-navigation-expand-more"
+          className="app-bar"
         />
       </div>
     );

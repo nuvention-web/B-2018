@@ -1,16 +1,21 @@
 import React from "react";
-import AppBar from 'material-ui/AppBar';
+import BatchCard from './BatchCard';
+import batches from '../common/batches';
 
-// Home page component
 export default class IngredientsGroup extends React.Component {
   // render
   render() {
     return (
       <div className="page-home">
-        <AppBar
-          title="Title"
-          iconClassNameRight="muidocs-icon-navigation-expand-more"
-        />
+        {batches.map(function(batch, idx) {
+          return (
+            <div key={"batch" + idx}>
+              <BatchCard className="batch-card" batch={batch}/>
+              <br></br>
+              <br></br>
+            </div>
+          )
+        })}
       </div>
     );
   }
