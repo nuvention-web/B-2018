@@ -1,6 +1,6 @@
 import React from "react";
 import FoodCard from './FoodCard'
-import dishes from '../common/dishes'
+import dishes from '../../common/dishes'
 
 export default class RecipeScore extends React.Component {
   render() {

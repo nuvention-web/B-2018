@@ -37,7 +37,7 @@ const BatchCard = (props) => (
     Total Price = &#36;{props.batch.ingredients.reduce((prev, next) => prev + next.price, 0)}
     </CardText>
     <CardActions>
-      <RaisedButton label="Make It!" fullWidth={true} backgroundColor="#68d2ed" href={"/B"+props.batchNum} />
+      <RaisedButton label="See Recipes" fullWidth={true} backgroundColor="#68d2ed" href={"/B"+props.batchNum} />
     </CardActions>
   </Card>
 );
