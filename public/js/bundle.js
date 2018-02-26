@@ -68788,7 +68788,7 @@
 
 	var _RecipeMetricCard2 = _interopRequireDefault(_RecipeMetricCard);
 
-	var _recipemetrics = __webpack_require__(1103);
+	var _recipemetrics = __webpack_require__(1105);
 
 	var _recipemetrics2 = _interopRequireDefault(_recipemetrics);
 
@@ -68869,7 +68869,11 @@
 
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 
-	var _reactPlayer = __webpack_require__(1084);
+	var _Divider = __webpack_require__(1084);
+
+	var _Divider2 = _interopRequireDefault(_Divider);
+
+	var _reactPlayer = __webpack_require__(1086);
 
 	var _reactPlayer2 = _interopRequireDefault(_reactPlayer);
 
@@ -68892,11 +68896,10 @@
 	  return _react2.default.createElement(
 	    _Card.Card,
 	    null,
+	    _react2.default.createElement(_Card.CardTitle, { title: props.recipemetric.title, className: 'match-text-container' }),
 	    _react2.default.createElement(
 	      _Card.CardMedia,
-	      {
-	        overlay: _react2.default.createElement(_Card.CardTitle, { title: props.recipemetric.title })
-	      },
+	      null,
 	      _react2.default.createElement(
 	        'div',
 	        { style: styles.root },
@@ -68937,6 +68940,19 @@
 	        );
 	      })
 	    ),
+	    _react2.default.createElement(_Divider2.default, null),
+	    _react2.default.createElement('br', null),
+	    _react2.default.createElement(
+	      _Card.CardText,
+	      { className: 'match-text-container' },
+	      _react2.default.createElement(
+	        'h2',
+	        null,
+	        'Elena also liked this recipe.'
+	      )
+	    ),
+	    _react2.default.createElement('br', null),
+	    _react2.default.createElement(_Divider2.default, null),
 	    _react2.default.createElement('br', null),
 	    _react2.default.createElement(
 	      _Card.CardMedia,
@@ -68965,6 +68981,104 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+	exports.default = undefined;
+
+	var _Divider = __webpack_require__(1085);
+
+	var _Divider2 = _interopRequireDefault(_Divider);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _Divider2.default;
+
+/***/ }),
+/* 1085 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _extends2 = __webpack_require__(859);
+
+	var _extends3 = _interopRequireDefault(_extends2);
+
+	var _objectWithoutProperties2 = __webpack_require__(901);
+
+	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
+
+	var _simpleAssign = __webpack_require__(953);
+
+	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
+
+	var _react = __webpack_require__(328);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _propTypes = __webpack_require__(513);
+
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Divider = function Divider(props, context) {
+	  var inset = props.inset,
+	      style = props.style,
+	      other = (0, _objectWithoutProperties3.default)(props, ['inset', 'style']);
+	  var _context$muiTheme = context.muiTheme,
+	      baseTheme = _context$muiTheme.baseTheme,
+	      prepareStyles = _context$muiTheme.prepareStyles;
+
+
+	  var styles = {
+	    root: {
+	      margin: 0,
+	      marginTop: -1,
+	      marginLeft: inset ? 72 : 0,
+	      height: 1,
+	      border: 'none',
+	      backgroundColor: baseTheme.palette.borderColor
+	    }
+	  };
+
+	  return _react2.default.createElement('hr', (0, _extends3.default)({}, other, { style: prepareStyles((0, _simpleAssign2.default)(styles.root, style)) }));
+	};
+
+	Divider.muiName = 'Divider';
+
+	Divider.propTypes = process.env.NODE_ENV !== "production" ? {
+	  /**
+	   * If true, the `Divider` will be indented.
+	   */
+	  inset: _propTypes2.default.bool,
+	  /**
+	   * Override the inline-styles of the root element.
+	   */
+	  style: _propTypes2.default.object
+	} : {};
+
+	Divider.defaultProps = {
+	  inset: false
+	};
+
+	Divider.contextTypes = {
+	  muiTheme: _propTypes2.default.object.isRequired
+	};
+
+	exports.default = Divider;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(330)))
+
+/***/ }),
+/* 1086 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -68974,21 +69088,21 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _props2 = __webpack_require__(1085);
+	var _props2 = __webpack_require__(1087);
 
-	var _utils = __webpack_require__(1086);
+	var _utils = __webpack_require__(1088);
 
-	var _players = __webpack_require__(1089);
+	var _players = __webpack_require__(1091);
 
 	var _players2 = _interopRequireDefault(_players);
 
-	var _Player3 = __webpack_require__(1092);
+	var _Player3 = __webpack_require__(1094);
 
 	var _Player4 = _interopRequireDefault(_Player3);
 
-	var _FilePlayer = __webpack_require__(1101);
+	var _FilePlayer = __webpack_require__(1103);
 
-	var _preload = __webpack_require__(1102);
+	var _preload = __webpack_require__(1104);
 
 	var _preload2 = _interopRequireDefault(_preload);
 
@@ -69174,7 +69288,7 @@
 	exports['default'] = ReactPlayer;
 
 /***/ }),
-/* 1085 */
+/* 1087 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -69346,7 +69460,7 @@
 	var DEPRECATED_CONFIG_PROPS = exports.DEPRECATED_CONFIG_PROPS = ['soundcloudConfig', 'youtubeConfig', 'facebookConfig', 'dailymotionConfig', 'vimeoConfig', 'fileConfig', 'wistiaConfig'];
 
 /***/ }),
-/* 1086 */
+/* 1088 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -69369,15 +69483,15 @@
 	exports.isObject = isObject;
 	exports.isEqual = isEqual;
 
-	var _loadScript = __webpack_require__(1087);
+	var _loadScript = __webpack_require__(1089);
 
 	var _loadScript2 = _interopRequireDefault(_loadScript);
 
-	var _deepmerge = __webpack_require__(1088);
+	var _deepmerge = __webpack_require__(1090);
 
 	var _deepmerge2 = _interopRequireDefault(_deepmerge);
 
-	var _props = __webpack_require__(1085);
+	var _props = __webpack_require__(1087);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
@@ -69618,7 +69732,7 @@
 	}
 
 /***/ }),
-/* 1087 */
+/* 1089 */
 /***/ (function(module, exports) {
 
 	
@@ -69689,7 +69803,7 @@
 
 
 /***/ }),
-/* 1088 */
+/* 1090 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	(function (global, factory) {
@@ -69792,7 +69906,7 @@
 
 
 /***/ }),
-/* 1089 */
+/* 1091 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -69801,30 +69915,30 @@
 	  value: true
 	});
 
-	var _YouTube = __webpack_require__(1090);
+	var _YouTube = __webpack_require__(1092);
 
-	var _SoundCloud = __webpack_require__(1093);
+	var _SoundCloud = __webpack_require__(1095);
 
-	var _Vimeo = __webpack_require__(1094);
+	var _Vimeo = __webpack_require__(1096);
 
-	var _Facebook = __webpack_require__(1095);
+	var _Facebook = __webpack_require__(1097);
 
-	var _Streamable = __webpack_require__(1096);
+	var _Streamable = __webpack_require__(1098);
 
-	var _Wistia = __webpack_require__(1097);
+	var _Wistia = __webpack_require__(1099);
 
-	var _Twitch = __webpack_require__(1098);
+	var _Twitch = __webpack_require__(1100);
 
-	var _DailyMotion = __webpack_require__(1099);
+	var _DailyMotion = __webpack_require__(1101);
 
-	var _Mixcloud = __webpack_require__(1100);
+	var _Mixcloud = __webpack_require__(1102);
 
-	var _FilePlayer = __webpack_require__(1101);
+	var _FilePlayer = __webpack_require__(1103);
 
 	exports['default'] = [_YouTube.YouTube, _SoundCloud.SoundCloud, _Vimeo.Vimeo, _Facebook.Facebook, _Streamable.Streamable, _Wistia.Wistia, _Twitch.Twitch, _DailyMotion.DailyMotion, _Mixcloud.Mixcloud, _FilePlayer.FilePlayer];
 
 /***/ }),
-/* 1090 */
+/* 1092 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -69842,9 +69956,9 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _utils = __webpack_require__(1086);
+	var _utils = __webpack_require__(1088);
 
-	var _singlePlayer = __webpack_require__(1091);
+	var _singlePlayer = __webpack_require__(1093);
 
 	var _singlePlayer2 = _interopRequireDefault(_singlePlayer);
 
@@ -70017,7 +70131,7 @@
 	exports['default'] = (0, _singlePlayer2['default'])(YouTube);
 
 /***/ }),
-/* 1091 */
+/* 1093 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -70036,13 +70150,13 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _props = __webpack_require__(1085);
+	var _props = __webpack_require__(1087);
 
-	var _Player = __webpack_require__(1092);
+	var _Player = __webpack_require__(1094);
 
 	var _Player2 = _interopRequireDefault(_Player);
 
-	var _utils = __webpack_require__(1086);
+	var _utils = __webpack_require__(1088);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
@@ -70092,7 +70206,7 @@
 	}
 
 /***/ }),
-/* 1092 */
+/* 1094 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -70109,7 +70223,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _props2 = __webpack_require__(1085);
+	var _props2 = __webpack_require__(1087);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
@@ -70350,7 +70464,7 @@
 	exports['default'] = Player;
 
 /***/ }),
-/* 1093 */
+/* 1095 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -70368,9 +70482,9 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _utils = __webpack_require__(1086);
+	var _utils = __webpack_require__(1088);
 
-	var _singlePlayer = __webpack_require__(1091);
+	var _singlePlayer = __webpack_require__(1093);
 
 	var _singlePlayer2 = _interopRequireDefault(_singlePlayer);
 
@@ -70513,7 +70627,7 @@
 	exports['default'] = (0, _singlePlayer2['default'])(SoundCloud);
 
 /***/ }),
-/* 1094 */
+/* 1096 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -70531,9 +70645,9 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _utils = __webpack_require__(1086);
+	var _utils = __webpack_require__(1088);
 
-	var _singlePlayer = __webpack_require__(1091);
+	var _singlePlayer = __webpack_require__(1093);
 
 	var _singlePlayer2 = _interopRequireDefault(_singlePlayer);
 
@@ -70680,7 +70794,7 @@
 	exports['default'] = (0, _singlePlayer2['default'])(Vimeo);
 
 /***/ }),
-/* 1095 */
+/* 1097 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -70696,9 +70810,9 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _utils = __webpack_require__(1086);
+	var _utils = __webpack_require__(1088);
 
-	var _singlePlayer = __webpack_require__(1091);
+	var _singlePlayer = __webpack_require__(1093);
 
 	var _singlePlayer2 = _interopRequireDefault(_singlePlayer);
 
@@ -70838,7 +70952,7 @@
 	exports['default'] = (0, _singlePlayer2['default'])(Facebook);
 
 /***/ }),
-/* 1096 */
+/* 1098 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -70854,9 +70968,9 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _utils = __webpack_require__(1086);
+	var _utils = __webpack_require__(1088);
 
-	var _singlePlayer = __webpack_require__(1091);
+	var _singlePlayer = __webpack_require__(1093);
 
 	var _singlePlayer2 = _interopRequireDefault(_singlePlayer);
 
@@ -70993,7 +71107,7 @@
 	exports['default'] = (0, _singlePlayer2['default'])(Streamable);
 
 /***/ }),
-/* 1097 */
+/* 1099 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -71011,9 +71125,9 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _utils = __webpack_require__(1086);
+	var _utils = __webpack_require__(1088);
 
-	var _singlePlayer = __webpack_require__(1091);
+	var _singlePlayer = __webpack_require__(1093);
 
 	var _singlePlayer2 = _interopRequireDefault(_singlePlayer);
 
@@ -71154,7 +71268,7 @@
 	exports['default'] = (0, _singlePlayer2['default'])(Wistia);
 
 /***/ }),
-/* 1098 */
+/* 1100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -71170,9 +71284,9 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _utils = __webpack_require__(1086);
+	var _utils = __webpack_require__(1088);
 
-	var _singlePlayer = __webpack_require__(1091);
+	var _singlePlayer = __webpack_require__(1093);
 
 	var _singlePlayer2 = _interopRequireDefault(_singlePlayer);
 
@@ -71311,7 +71425,7 @@
 	exports['default'] = (0, _singlePlayer2['default'])(Twitch);
 
 /***/ }),
-/* 1099 */
+/* 1101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -71329,9 +71443,9 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _utils = __webpack_require__(1086);
+	var _utils = __webpack_require__(1088);
 
-	var _singlePlayer = __webpack_require__(1091);
+	var _singlePlayer = __webpack_require__(1093);
 
 	var _singlePlayer2 = _interopRequireDefault(_singlePlayer);
 
@@ -71496,7 +71610,7 @@
 	exports['default'] = (0, _singlePlayer2['default'])(DailyMotion);
 
 /***/ }),
-/* 1100 */
+/* 1102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -71514,9 +71628,9 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _utils = __webpack_require__(1086);
+	var _utils = __webpack_require__(1088);
 
-	var _singlePlayer = __webpack_require__(1091);
+	var _singlePlayer = __webpack_require__(1093);
 
 	var _singlePlayer2 = _interopRequireDefault(_singlePlayer);
 
@@ -71650,7 +71764,7 @@
 	exports['default'] = (0, _singlePlayer2['default'])(Mixcloud);
 
 /***/ }),
-/* 1101 */
+/* 1103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -71668,9 +71782,9 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _utils = __webpack_require__(1086);
+	var _utils = __webpack_require__(1088);
 
-	var _singlePlayer = __webpack_require__(1091);
+	var _singlePlayer = __webpack_require__(1093);
 
 	var _singlePlayer2 = _interopRequireDefault(_singlePlayer);
 
@@ -71954,7 +72068,7 @@
 	exports['default'] = (0, _singlePlayer2['default'])(FilePlayer);
 
 /***/ }),
-/* 1102 */
+/* 1104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -71968,17 +72082,17 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Player = __webpack_require__(1092);
+	var _Player = __webpack_require__(1094);
 
 	var _Player2 = _interopRequireDefault(_Player);
 
-	var _YouTube = __webpack_require__(1090);
+	var _YouTube = __webpack_require__(1092);
 
-	var _SoundCloud = __webpack_require__(1093);
+	var _SoundCloud = __webpack_require__(1095);
 
-	var _Vimeo = __webpack_require__(1094);
+	var _Vimeo = __webpack_require__(1096);
 
-	var _DailyMotion = __webpack_require__(1099);
+	var _DailyMotion = __webpack_require__(1101);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
@@ -72040,7 +72154,7 @@
 	}
 
 /***/ }),
-/* 1103 */
+/* 1105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/eli/code/class/nuvention/B-2018/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/eli/code/class/nuvention/B-2018/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -72054,8 +72168,7 @@
 	  "title": "Chicken and Veggie Stir Fry",
 	  "url": "https://www.youtube.com/watch?v=1kPP0-voQJg",
 	  "vidUrl": "https://www.youtube.com/watch?v=1kPP0-voQJg",
-	  "imgUrl": "https://images.media-allrecipes.com/userphotos/720x405/1006752.jpg",
-	  "imgUrls": ["https://images.media-allrecipes.com/userphotos/720x405/1006752.jpg", "https://images.media-allrecipes.com/userphotos/720x405/1006752.jpg", "https://images.media-allrecipes.com/userphotos/720x405/1006752.jpg", "https://images.media-allrecipes.com/userphotos/720x405/1006752.jpg", "https://images.media-allrecipes.com/userphotos/720x405/1006752.jpg", "https://images.media-allrecipes.com/userphotos/720x405/1006752.jpg"],
+	  "imgUrls": ["https://drive.google.com/uc?export=view&id=1vkjacvMCdXztt45nLJfp0OziW2wkxchR", "https://drive.google.com/uc?export=view&id=1NrVt96FHlbYk44emhUimYXyYL2AtvjRW", "https://drive.google.com/uc?export=view&id=1J4vYW96kQ-PjclSQc4d-DDqMCC4pPKbV", "https://drive.google.com/uc?export=view&id=1jZWeuTm-PU4yYFgvq2KBtQX7kgkBExqN"],
 	  "relatedRecipes": ["Veggie Stir Fry", "Baked Chicken Fritatas"]
 	}];
 

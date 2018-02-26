@@ -24,9 +24,8 @@ const styles = {
 
 const RecipeMetricCard = (props) => (
   <Card>
-    <CardMedia
-      overlay={<CardTitle title={props.recipemetric.title} />}
-    >
+    <CardTitle title={props.recipemetric.title} className="match-text-container" />
+    <CardMedia>
       <div style={styles.root}>
         <GridList style={styles.gridList} cols={2.2}>
           {props.recipemetric.imgUrls.map((url, idx) => (
