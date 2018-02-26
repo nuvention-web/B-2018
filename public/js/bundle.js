@@ -64036,7 +64036,27 @@
 	      return _react2.default.createElement(
 	        "div",
 	        { className: "page-home" },
-	        "Try going to https://b-2018.firebaseapp.com/1"
+	        "Try going to:",
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "a",
+	          { href: "https://b-2018.firebaseapp.com/a" },
+	          "https://b-2018.firebaseapp.com/a"
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "a",
+	          { href: "https://b-2018.firebaseapp.com/b" },
+	          "https://b-2018.firebaseapp.com/b"
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement(
+	          "a",
+	          { href: "https://b-2018.firebaseapp.com/c" },
+	          "https://b-2018.firebaseapp.com/c"
+	        ),
+	        _react2.default.createElement("br", null),
+	        "for our 3 demos!"
 	      );
 	    }
 	  }]);
@@ -67990,6 +68010,11 @@
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'page-home' },
+	        _react2.default.createElement(
+	          'h2',
+	          null,
+	          'We found one batch of recipes you pinned with ingredients in common that you might not have:'
+	        ),
 	        _batches2.default.map(function (batch, idx) {
 	          return _react2.default.createElement(
 	            'div',

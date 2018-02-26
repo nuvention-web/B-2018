@@ -7,6 +7,7 @@ export default class IngredientsGroup extends React.Component {
   render() {
     return (
       <div className="page-home">
+        <h2>We found one batch of recipes you pinned with ingredients in common that you might not have:</h2>
         {batches.map(function(batch, idx) {
           return (
             <div key={"batch" + idx}>
