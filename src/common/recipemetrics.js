@@ -1,6 +1,6 @@
 let dishes = [
   {
-    "title": "Chicken and Veggie Stir Fry",
+    "title": "Foil Pack Chicken & Rainbow Veggies",
     "url": "https://www.youtube.com/watch?v=1kPP0-voQJg",
     "vidUrl": "https://www.youtube.com/watch?v=1kPP0-voQJg",
     "imgUrls": [
