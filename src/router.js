@@ -11,7 +11,7 @@ import RecipeScore from "./components/RecipeScoring/RecipeScore";
 import IngredientsGroup from "./components/BatchRecipes/IngredientsGroup";
 import BatchDisplay0 from "./components/BatchRecipes/BatchDisplay0";
 
-import SuggestBetterRecipes from "./components/SuggestBetterRecipes/SuggestBetterRecipes";
+import TrustRecipeQuality from "./components/TrustRecipeQuality/TrustRecipeQuality";
 
 // build the router
 const router = (
@@ -22,7 +22,7 @@ const router = (
       <Route path="a0" component={RecipeScore}/>
       <Route path="b" component={IngredientsGroup}/>
       <Route path="b0" component={BatchDisplay0}/>
-      <Route path="c" component={SuggestBetterRecipes}/>
+      <Route path="c" component={TrustRecipeQuality}/>
     </Route>
   </Router>
 );
