@@ -1,4 +1,4 @@
-[
+module.exports = [
         {
             "recipe": {
                 "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_cb21b74f8be99b5fbb6abfad25a20e77",

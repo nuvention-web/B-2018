@@ -12,14 +12,16 @@ export default class App extends React.Component {
     return (
       <div>
         <MuiThemeProvider>
-          <div className="container">
+          <span>
             <AppBar
-              title="NUvention"
+              title="Recipes"
               iconClassNameRight="muidocs-icon-navigation-expand-more"
               className="app-bar"
             />
-            {this.props.children}
-          </div>
+            <div className="container">
+              {this.props.children}
+            </div>
+          </span>
         </MuiThemeProvider>
       </div>
     );
