@@ -31,7 +31,7 @@ export default class MVPDisplay extends React.Component {
         if (params.numServings) {
           if (params.numServings == "More than 5") {
             return recipe.recipe.yield > 5;
-          } else if  {
+          } else {
             return recipe.recipe.yield >= parseInt(params.numServings);
           }
         }
