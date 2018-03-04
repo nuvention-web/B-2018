@@ -33,6 +33,7 @@ export default class MVPDisplay extends React.Component {
         } else {
           return recipe.recipe.yield >= parseInt(params.numServings);
         }
+        return true;
       })
       console.log(filteredRecipes);
       filteredRecipes = filteredRecipes.filter((recipe) => {
