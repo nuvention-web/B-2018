@@ -32,7 +32,6 @@ export default class MVPDisplay extends React.Component {
 
   handleLoadMore() {
     this.setState({
-      startIndex: this.state.startIndex+10,
       endIndex: this.state.endIndex+10
     });
   }
