@@ -27,7 +27,7 @@ function shuffle(array) {
 
 // main reducers
 export const recipes = shuffle([
-  ...bread,
+  // ...bread,
   ...chicken,
   ...egg,
   ...salad,
