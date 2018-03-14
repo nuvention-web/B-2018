@@ -13,6 +13,9 @@ import BatchDisplay0 from "./components/BatchRecipes/BatchDisplay0";
 
 import TrustRecipeQuality from "./components/TrustRecipeQuality/TrustRecipeQuality";
 
+import MVPForm from "./components/MVP/MVPForm";
+import MVPDisplay from "./components/MVP/MVPDisplay";
+
 // build the router
 const router = (
   <Router onUpdate={() => window.scrollTo(0, 0)} history={history}>
@@ -23,6 +26,8 @@ const router = (
       <Route path="b" component={IngredientsGroup}/>
       <Route path="b0" component={BatchDisplay0}/>
       <Route path="c" component={TrustRecipeQuality}/>
+      <Route path="d" component={MVPForm}/>
+      <Route path="d0" component={MVPDisplay}/>
     </Route>
   </Router>
 );
